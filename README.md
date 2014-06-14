@@ -12,7 +12,6 @@ With bower:
 
     $ bower install ng-googlemaps
 
-</ul>
 
 ### Dependencies
 ```html
