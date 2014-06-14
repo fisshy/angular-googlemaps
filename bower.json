@@ -1,0 +1,31 @@
+{
+  "name": "angular-googlemaps",
+  "version": "1.1.4",
+  "homepage": "https://github.com/fisshy/angular-googlemaps",
+  "authors": [
+    "Joachim Karlsson <Jockkee_@hotmail.com>"
+  ],
+  "description": "Lightweight angular directive for google maps",
+  "main": "googlemaps.js",
+  "keywords": [
+    "angular",
+    "googlemaps"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "css",
+    ".gitignore",
+    "package.json",
+    "LICENSE",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "angular": "~1.2.13"
+  }
+}
