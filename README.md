@@ -15,6 +15,16 @@ angular.module('myModule', ['ngGooglemaps']);
 ### Core
     Size googlemaps.js : 2.48 kB
     Size googlemaps.min.js : 1.08 kB
+```html
+<div
+    ng-googlemaps
+    start-lat="57.639744",
+    start-lng="11.956218",
+    zoom="8",
+    positions="{lat: 57.639744, lng : 11.956218}"
+    positions="[{lat: 57.639744, lng : 11.956218}]"
+    >
+```
 
 
 
@@ -30,22 +40,6 @@ Install
 With bower:
 
     $ bower install ng-googlemaps
-
-
-
-
-### Directive
-```html
-
-<div
-    ng-googlemaps
-    start-lat="57.639744",
-    start-lng="11.956218",
-    zoom="8",
-    positions="{lat: 57.639744, lng : 11.956218}"
-	positions="[{lat: 57.639744, lng : 11.956218}]"
-    >
-```
 
 
 Building
