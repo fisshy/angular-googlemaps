@@ -4,17 +4,19 @@ Angular - Google maps
 
 Lightweight google maps wrapper focused on modules.
 
-### Core
-    Size googlemaps.js : 2.48 kB
-    Size googlemaps.min.js : 1.08 kB
-
-    ### Dependencies
+ ### Dependencies
     ```html
     <script src="https://maps.googleapis.com/maps/api/js?key=#{YOUR_API_KEY}"></script>
     ```
     ```js
     angular.module('myModule', ['ngGooglemaps']);
     ```
+
+### Core
+    Size googlemaps.js : 2.48 kB
+    Size googlemaps.min.js : 1.08 kB
+
+
 
 ### Modules
 ##### Geolocation
