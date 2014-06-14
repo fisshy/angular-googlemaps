@@ -2,16 +2,11 @@ Angular - Google maps
 =================
 (Work in progress)
 
-Lightweight google maps wrapper focused on markers.
+Lightweight google maps wrapper focused on modules.
 
-890 bytes minified
-
-Install
--------
-With bower:
-
-    $ bower install ng-googlemaps
-
+### Core
+Size googlemaps.js : 2.48 kB
+Size googlemaps.min.js : 1.08 kB
 
 ### Dependencies
 ```html
@@ -20,6 +15,22 @@ With bower:
 ```js
 angular.module('myModule', ['ngGooglemaps']);
 ```
+
+### Modules
+##### Geolocation
+    Size geolocation.js : 458 B
+    Size geolocation.min.js : 325 B
+
+
+
+Install
+-------
+With bower:
+
+    $ bower install ng-googlemaps
+
+
+
 
 ### Directive
 ```html
