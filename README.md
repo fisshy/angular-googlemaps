@@ -26,14 +26,33 @@ angular.module('myModule', ['ngGooglemaps']);
     >
 ```
 
+#### Core API (empty if no modules added)
+```js
+angular.module('myModule')
+  .controller($scope, GoogleApi) {
+    
+});
+```
+
 
 
 ### Modules
-##### Geolocation
+Geolocation
+-------
+https://developers.google.com/maps/documentation/geocoding/
+
     Size geolocation.js : 458 B
     Size geolocation.min.js : 325 B
-
-
+```js
+GoogleApi.geocode('Street, Postal, City'
+  .success(function(result) {
+    // do something
+  });
+```
+Optional
+```js
+angular.module('myModule').constant('GOOGLE_API_KEY', '{YOUR_API_KEY}');
+```
 
 Install
 -------
