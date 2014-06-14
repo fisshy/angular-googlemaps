@@ -14,10 +14,14 @@ With bower:
 
 </ul>
 
+### Dependencies
+```html
+<script src="https://maps.googleapis.com/maps/api/js?key=#{YOUR_API_KEY}"></script>
+```
+
 ### Directive
 ```html
 
-<script src="https://maps.googleapis.com/maps/api/js?key=#{YOUR_API_KEY}"></script>
 
 <div
     ng-googlemaps
