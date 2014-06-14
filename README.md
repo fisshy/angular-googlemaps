@@ -4,6 +4,8 @@ Angular - Google maps
 
 Lightweight google maps wrapper focused on modules.
 
+Make it as big as you want, Just include the modules you want.
+
 ### Dependencies
 ```html
 <script src="https://maps.googleapis.com/maps/api/js?key=#{YOUR_API_KEY}"></script>
@@ -26,7 +28,6 @@ angular.module('myModule', ['ngGooglemaps']);
     >
 ```
 
-#### Core API (empty if no modules added)
 ```js
 angular.module('myModule')
   .controller($scope, GoogleApi) {
@@ -35,10 +36,10 @@ angular.module('myModule')
 ```
 
 
-
-### Modules
-Geolocation
+Modules
 -------
+### Geolocation
+
 https://developers.google.com/maps/documentation/geocoding/
 
     Size geolocation.js : 458 B
