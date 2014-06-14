@@ -17,10 +17,12 @@ With bower:
 ```html
 <script src="https://maps.googleapis.com/maps/api/js?key=#{YOUR_API_KEY}"></script>
 ```
+```js
+angular.module('myModule', ['ngGooglemaps']);
+```
 
 ### Directive
 ```html
-
 
 <div
     ng-googlemaps

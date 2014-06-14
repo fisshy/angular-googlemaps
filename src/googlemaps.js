@@ -1,4 +1,4 @@
-angular.module('evoxs').directive('ngGooglemaps', function() {
+angular.module('ngGooglemaps', []).directive('ngGooglemaps', function() {
 
   var isValidPosition = function(pos) {
     var isValid = true;
