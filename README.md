@@ -52,7 +52,7 @@ GoogleApi.geocode('Street, Postal, City'
 ```
 Optional
 ```js
-angular.module('myModule').constant('GOOGLE_API_KEY', '{YOUR_API_KEY}');
+angular.module('ngGoogleMaps').constant('GOOGLE_API_KEY', '{YOUR_API_KEY}');
 ```
 
 Install
@@ -65,4 +65,11 @@ With bower:
 Building
 -------
 	$ gulp
+
+
+TODO
+-------
+- Implement module for editing
+- Implement support for multiple marks
+
 	
