@@ -53,7 +53,18 @@ angular.module('ngGooglemaps', [])
         var updateMarkers = function(positions) {
 
           if(angular.isArray(positions)) {
-            
+            console.log(positions);
+            angular.forEach(positions, function(position){
+              createMarker(position);
+            });
+
+            var bounds = new google.maps.LatLngBounds();
+            angular.forEach(markers, function(marker) {
+              bounds.extend(marker.getPosition());
+            });
+            map.setCenter(bounds.getCenter());
+            map.fitBounds(bounds); 
+
           } else {
             var marker;
             var position = positions;
