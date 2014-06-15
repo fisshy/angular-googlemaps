@@ -14,22 +14,24 @@ angular.module('ngGooglemaps', [])
         startLat   : '=',
         startLng   : '=',
         zoom       : '=',
-        positions  : '='
+        positions  : '=',
+        disableDefaultUi : '='
       },
       link : function($scope, $element, $attrs) {
-        var start_lat = $scope.startLat;
-        var start_lng = $scope.startLng;
-        var zoom      = $scope.zoom;
-        var positions = $scope.positions;
-        var markers   = [];
+        var start_lat         = $scope.startLat;
+        var start_lng         = $scope.startLng;
+        var zoom              = $scope.zoom;
+        var positions         = $scope.positions;
+        var disableDefaultUi  = $scope.disableDefaultUi
+        var markers           = [];
 
         $element.addClass('map-canvas');
 
         var mapElement = $element[0];
-
         var mapOptions = {
           center: new google.maps.LatLng(start_lat, start_lng),
-          zoom: zoom
+          zoom: zoom,
+          disableDefaultUI: disableDefaultUi || false
         };
 
         var map = new google.maps.Map(mapElement, mapOptions);
@@ -51,7 +53,7 @@ angular.module('ngGooglemaps', [])
         var updateMarkers = function(positions) {
 
           if(angular.isArray(positions)) {
-
+            
           } else {
             var marker;
             var position = positions;

@@ -24,7 +24,8 @@ angular.module('myModule', ['ngGooglemaps']);
     start-lng="11.956218",
     zoom="8",
     positions="{lat: 57.639744, lng : 11.956218}"
-    positions="[{lat: 57.639744, lng : 11.956218}]"
+    positions="[{lat: 57.639744, lng : 11.956218}]",
+    disable-default-ui="true"
     >
 ```
 
