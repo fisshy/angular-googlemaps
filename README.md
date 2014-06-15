@@ -15,8 +15,8 @@ angular.module('myModule', ['ngGooglemaps']);
 ```
 
 ### Core
-    Size googlemaps.js : 2.48 kB
-    Size googlemaps.min.js : 1.08 kB
+    Size googlemaps.js : 3.04 kB
+    Size googlemaps.min.js : 1.32 kB
 ```html
 <div
     ng-googlemaps

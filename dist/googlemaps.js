@@ -53,7 +53,6 @@ angular.module('ngGooglemaps', [])
         var updateMarkers = function(positions) {
 
           if(angular.isArray(positions)) {
-            console.log(positions);
             angular.forEach(positions, function(position){
               createMarker(position);
             });
