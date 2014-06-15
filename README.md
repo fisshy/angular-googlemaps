@@ -71,6 +71,6 @@ Building
 TODO
 -------
 - Implement module for editing
-- Implement support for multiple marks
+- Implement support to update
 
 	
