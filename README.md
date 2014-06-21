@@ -46,7 +46,7 @@ https://developers.google.com/maps/documentation/geocoding/
     Size geolocation.js : 458 B
     Size geolocation.min.js : 325 B
 ```js
-GoogleApi.geocode('Street, Postal, City'
+GoogleApi.geocode('Street, Postal, City')
   .success(function(result) {
     // do something
   });
