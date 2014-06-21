@@ -51,6 +51,8 @@ angular.module('ngGooglemaps', [])
         };
 
         var updateMarkers = function(positions) {
+          
+          cleanMarkers();
 
           if(angular.isArray(positions)) {
             angular.forEach(positions, function(position){
