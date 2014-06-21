@@ -83,7 +83,6 @@ angular.module('ngGooglemaps', [])
         var cleanMarkers = function() {
           angular.forEach(markers, function(marker, i) {
             marker.setMap(null);
-            markers.splice(i, 1);
           });
           markers = [];
         };
