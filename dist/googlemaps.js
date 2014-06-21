@@ -58,6 +58,7 @@ angular.module('ngGooglemaps', [])
           var multiple  =   isArray && positions.length > 1
           
           if(multiple) {
+            console.log(multiple);
             angular.forEach(positions, function(position){
               createMarker(position);
             });
