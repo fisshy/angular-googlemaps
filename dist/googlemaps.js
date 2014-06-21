@@ -51,10 +51,12 @@ angular.module('ngGooglemaps', [])
         };
 
         var updateMarkers = function(positions) {
-          
           cleanMarkers();
 
-          if(angular.isArray(positions)) {
+          var isArray   =   angular.isArray(positions);
+          var multiple  =   isArray && positions.length > 1
+          
+          if(multiple) {
             angular.forEach(positions, function(position){
               createMarker(position);
             });
@@ -68,10 +70,11 @@ angular.module('ngGooglemaps', [])
 
           } else {
             var marker;
-            var position = positions;
+            var position = isArray ? positions[0] : positions;
             if(isValidPosition(position)) {
-              var mark = markers.length === 1 ? markers[0] : createMarker(position);
+              var mark = createMarker(position);
               map.setCenter(mark.position);
+              map.setZoom(zoom);
             }
           }
         };
@@ -79,8 +82,9 @@ angular.module('ngGooglemaps', [])
         var cleanMarkers = function() {
           angular.forEach(markers, function(marker, i) {
             marker.setMap(null);
-            markers.splice(i, 1);
+            console.log("removed", markers);
           });
+          markers = [];
         };
 
         var watch = function(next, error) {
