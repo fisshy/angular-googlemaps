@@ -85,6 +85,7 @@ angular.module('ngGooglemaps', [])
             marker.setMap(null);
             markers.splice(i, 1);
           });
+          markers = [];
         };
 
         var watch = function(next, error) {
